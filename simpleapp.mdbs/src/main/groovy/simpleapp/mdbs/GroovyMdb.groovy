@@ -15,10 +15,8 @@ import simpleapp.sessionbeans.Publisher;
 	@ActivationConfigProperty(propertyName = "destination", propertyValue = "jms/q0")],
 	mappedName = "jms/q0")
 public class GroovyMdb implements MessageListener {
-	@EJB
-	private Logger logger
-	@EJB
-	private Publisher pub
+	@EJB private Logger logger
+	@EJB private Publisher pub
 	
 	public GroovyMdb() {}
 	
